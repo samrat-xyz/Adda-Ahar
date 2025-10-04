@@ -7,7 +7,7 @@ function ItemDetails() {
   const data = useLoaderData();
   const details = data.meals;
   return (
-    <div className='container mx-auto my-8'>
+    <div className='container mx-auto my-8 p-3'>
       {
         details.map(details => <Detail details={details} key={details.idMeal}/>)
       }

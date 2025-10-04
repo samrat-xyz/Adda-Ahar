@@ -10,16 +10,16 @@ function Item({ item }) {
   const description = `${strMeal} is one of our delicious seafood specials prepared with fresh ingredients and unique flavors.`;
 
   return (
-    <div className="rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+    <div className="rounded-xl shadow-lg hover:shadow-2xl transition">
       <div>
         <img
           src={strMealThumb}
           alt={strMeal}
-          className="w-full h-60 object-cover rounded-lg"
+          className="w-full h-64 object-cover rounded-t-xl"
         />
       </div>
 
-      <div className="space-y-2 mt-4">
+      <div className="space-y-2 mt-4 p-4">
         <p className="text-lg font-semibold">{strMeal}</p>
         <p>
           <span className="font-medium">Price:</span> {price} ৳

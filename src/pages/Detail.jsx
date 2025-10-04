@@ -19,7 +19,7 @@ function Detail({ details }) {
         <div>
           <h1 className="text-3xl font-bold text-gray-800 mb-2">{strMeal}</h1>
           <p className="text-lg text-gray-500 mb-4">
-            <span className="font-semibold text-gray-700">Country:</span> {strArea}
+            <span className="font-semibold text-gray-700">Dish From:</span> {strArea}
           </p>
           <p className="text-gray-700 leading-relaxed">
             <span className="text-lg font-semibold">Description:</span>{strInstructions.slice(0, 400)}...
@@ -28,7 +28,7 @@ function Detail({ details }) {
 
         {/* Optional Button */}
         <div className="mt-3">
-          <button className="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-6 py-2 rounded-lg transition-all">
+          <button className="btn btn-neutral btn-outline px-8 py-3 text-lg">
             Order Now
           </button>
         </div>
