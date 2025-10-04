@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 import logoImg from "../../assets/logo.png";
+import { NavLink } from "react-router";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -17,13 +18,13 @@ function Navbar() {
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-8 cursor-pointer text-lg pr-14">
           <li>
-            <a>Home</a>
+            <NavLink to='/'>Home</NavLink>
           </li>
           <li>
-            <a>About</a>
+            <NavLink to='/about'>About</NavLink>
           </li>
           <li>
-            <a>Menus</a>
+            <NavLink to='/menu'>Menu</NavLink>
           </li>
           <li>
             <button className="px-3 py-2 bg-[#da8545] text-white rounded-md cursor-pointer">
@@ -47,13 +48,13 @@ function Navbar() {
       {isOpen && (
         <ul className=" flex flex-col gap-4 text-center md:hidden mb-4 ">
           <li className="btn btn-ghost">
-            <a>Home</a>
+            <NavLink to='/'>Home</NavLink>
           </li >
           <li className="btn btn-ghost">
-            <a>About</a>
+            <NavLink to='/about'>About</NavLink>
           </li>
           <li className="btn btn-ghost">
-            <a>Menus</a>
+            <NavLink to='/menu'>Menus</NavLink>
           </li>
           <li>
             <button className="px-3 py-2 bg-[#da8545] text-white rounded-md cursor-pointer">
